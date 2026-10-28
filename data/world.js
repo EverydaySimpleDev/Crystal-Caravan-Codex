@@ -745,8 +745,8 @@ window.CODEX_DATA.world = {
       "when": null,
       "what": "Talk to De Nam (a Selkie near Shella's accessory blacksmith). After he sends you 9 letters, a Sahagin in Conall Curach's 3rd area drops his Worn Bandanna.",
       "choices": null,
-      "missable": null,
-      "notes": "Reward: Worn Bandanna.",
+      "missable": true,
+      "notes": "Reward: Worn Bandanna. Missable – answer each of De Nam's letters correctly, or he never drops the bandanna.",
       "source": "Guides and extra resources"
     },
     {
@@ -1087,6 +1087,12 @@ window.CODEX_DATA.world = {
       "consequence": null,
       "when": "Before cycle 3",
       "source": "FFCC Notes"
+    },
+    {
+      "name": "Worn Bandanna",
+      "consequence": "Answer De Nam's letters correctly. If you give him a wrong answer, the Sahagin in Conall Curach never drops his bandanna and the Pen Pal quest can't be finished.",
+      "when": "When replying to De Nam's letters",
+      "source": "Player report"
     },
     {
       "name": "Veo Lu Sluice dry-pool chests",

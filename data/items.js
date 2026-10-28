@@ -10408,8 +10408,8 @@ window.CODEX_DATA.items = {
         },
       ],
       notes:
-        "Received in Conall Curach after De Nam stops sending letters. Spelled 'Worn Bandana' in the vault.",
-      source: "GameFAQs guide",
+        "Received in Conall Curach after De Nam stops sending letters – but only if you answered his letters correctly; a wrong answer means it's never dropped. Spelled 'Worn Bandana' in the vault.",
+      source: "GameFAQs guide; player report (missable)",
     },
     {
       name: "Wheat",

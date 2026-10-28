@@ -257,7 +257,7 @@ function renderTab(container, tab, query = "") {
                   { type: "button", class: "link-button", title: "Where to get it", onclick: () => showWhere(c.value(row)) },
                   content,
                 ),
-                missable ? el("span", { class: "chip missable-chip", title: `Get it ${missable.when.toLowerCase()}` }, "Missable") : null,
+                missable ? el("span", { class: "chip missable-chip", title: `Get it ${missable.when.charAt(0).toLowerCase()}${missable.when.slice(1)}` }, "Missable") : null,
               ];
             }
             return el("td", { class: [c.num ? "num" : "", c.small ? "small" : ""].join(" ").trim() || null }, content ?? "—");

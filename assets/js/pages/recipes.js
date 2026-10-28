@@ -290,8 +290,10 @@ function renderBasket() {
         el(
           "td",
           {},
-          linkTo(name, itemHref(name)),
-          where.length ? el("div", { class: "small muted" }, where.map((f, i) => [i ? ", " : "", foundLink(f)])) : null,
+          el("span", { class: "basket-material" }, linkTo(name, itemHref(name))),
+          where.length
+            ? el("div", { class: "basket-where" }, el("span", { class: "basket-where-label" }, "Found in "), where.map((f, i) => [i ? ", " : "", foundLink(f)]))
+            : null,
         ),
         el("td", { class: "num" }, needed),
         el(

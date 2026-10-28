@@ -1274,3 +1274,30 @@ a.btn.danger, a.btn.danger:hover { color: #fff; }
 @media (max-width: 400px) {
   .brand { white-space: normal; line-height: 1.1; min-width: 0; }
 }
+
+/*
+  Shopping list: it sticks beside the recipes as you scroll, so when it's taller
+  than the window it gets its own scrollbar instead of hiding its bottom half.
+*/
+@media (min-width: 981px) {
+  .sticky-side {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    scrollbar-color: var(--frame) transparent;
+  }
+}
+
+/* Material names stand out from the places listed under them. */
+.basket-material { display: block; font-size: 1.05rem; font-weight: 700; }
+.basket-material a { color: #5a3d12; text-decoration-color: rgb(90 61 18 / 0.4); }
+.basket-where {
+  margin-top: 3px;
+  padding-left: 8px;
+  border-left: 2px solid var(--panel-line);
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: var(--panel-ink-soft);
+}
+.basket-where-label { font-style: italic; }

@@ -112,7 +112,7 @@
         when: guide?.when ?? `Before cycle ${lastCycle + 1}`,
         why: guide?.consequence ?? null,
         lastCycle,
-        source: guide ? "guides" : "game data",
+        source: guide ? (guide.source === "Player report" ? "player reports" : "guides") : "game data",
       };
     }
 
@@ -226,7 +226,7 @@
     return el(
       "div",
       { class: "missable-alert", role: "note" },
-      el("b", {}, "⚠ Missable – get it ", m.when.toLowerCase(), ". "),
+      el("b", {}, "⚠ Missable – get it ", m.when.charAt(0).toLowerCase() + m.when.slice(1), ". "),
       m.why ?? (m.lastCycle ? `It's only found in cycles 1–${m.lastCycle} and no shop sells it, so once these dungeons reach cycle ${m.lastCycle + 1} it's gone.` : ""),
       el("span", { class: "small muted" }, ` (from the ${m.source})`),
     );
