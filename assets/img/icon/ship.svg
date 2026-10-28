@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- A small sailing ship for ferry pins on the town maps. -->
+  <path d="M32 6v34" stroke="#5a3d12" stroke-width="3" stroke-linecap="round"/>
+  <path d="M34 9c11 6 15 16 14 27H34z" fill="#fffaf0" stroke="#8a6a32" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M30 14c-8 5-11 13-10 22h10z" fill="#f3e6c4" stroke="#8a6a32" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M8 42h48l-7 12H15z" fill="#8a5a1c" stroke="#3b2a16" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M6 58c5 0 5-3 10-3s5 3 10 3 5-3 10-3 5 3 10 3 5-3 10-3" fill="none" stroke="#3c91f5" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+    GitHub Pages shows this for any missing page, at whatever address was asked
+    for (…/Crystal-Caravan-Codex/some/old/link), so on the live site a <base> tag
+    points every relative link and style back at the site root. Opened straight
+    from disk the address has no "/Crystal-Caravan-Codex/" in it, so no <base> is
+    added and the relative paths work as they are.
+  -->
+  <script>
+    (() => {
+      const root = "/Crystal-Caravan-Codex/";
+      const at = location.pathname.indexOf(root);
+      if (at < 0) return;
+      const base = document.createElement("base");
+      base.href = location.pathname.slice(0, at) + root;
+      document.head.append(base);
+    })();
+  </script>
+  <title>Page not found | Crystal Caravan Codex</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#141526">
+  <link rel="icon" href="assets/img/icon/crystal-0.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/codex.css">
+</head>
+<body class="lost-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main" tabindex="-1">
+    <!-- Slow-moving miasma behind everything; purely decorative. -->
+    <div class="miasma" aria-hidden="true"><span></span><span></span><span></span></div>
+
+    <section class="lost">
+      <p class="lost-code" aria-label="404">
+        <span>4</span><span class="lost-crystal" role="presentation"></span><span>4</span>
+      </p>
+      <h1>Lost in the miasma</h1>
+      <blockquote class="lost-diary">
+        The chalice's light didn't reach this far. Whatever page I was looking for
+        must lie somewhere beyond the stream – best turn the caravan around.
+      </blockquote>
+
+      <div class="lost-actions">
+        <a class="btn" href="index.html">Back to the Codex</a>
+        <button class="btn secondary" type="button" id="lost-search">Search the Codex</button>
+      </div>
+
+      <h2 class="lost-subhead">Or head somewhere familiar</h2>
+      <nav class="lost-links" aria-label="Popular pages">
+        <a href="dungeons.html"><img src="assets/img/dungeon/goblin-wall.png" alt=""><span>Dungeons</span></a>
+        <a href="items.html"><img src="assets/img/icon/tab-weapon.png" alt=""><span>Items</span></a>
+        <a href="artifacts.html"><img src="assets/img/artifact/artifact-10.png" alt=""><span>Artifacts</span></a>
+        <a href="bestiary.html"><img src="assets/img/icon/helm-horned.png" alt=""><span>Bestiary</span></a>
+        <a href="world.html"><img src="assets/img/world/icons/tipa.png" alt=""><span>World</span></a>
+        <a href="towns.html"><img src="assets/img/world/icons/marrs-pass.png" alt=""><span>Towns</span></a>
+      </nav>
+
+      <img class="lost-mog" src="assets/img/ui/mog-0.png" alt="">
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script>
+    Codex.initPage();
+    // The site search opens on "/" – the button just presses it for you.
+    document.getElementById("lost-search").addEventListener("click", (event) => {
+      event.stopPropagation();
+      document.dispatchEvent(new KeyboardEvent("keydown", { key: "/" }));
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+
+# Throwaway test pages (named with a leading underscore)
+_*.html

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO -->
+  <title>Sources &amp; Contributing | Crystal Caravan Codex</title>
+  <meta name="description" content="Where the Crystal Caravan Codex data comes from – the FFCC World Ultimania, official guides, the speedrun community and the game files – and how to correct it.">
+  <meta name="keywords" content="FFCC Ultimania, FFCC sources, FFCC data, Final Fantasy Crystal Chronicles, FFCC, FF Crystal Chronicles, GameCube">
+  <meta name="theme-color" content="#141526">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Crystal Caravan Codex">
+  <meta property="og:title" content="Sources &amp; Contributing | Crystal Caravan Codex">
+  <meta property="og:description" content="Where the Crystal Caravan Codex data comes from – the FFCC World Ultimania, official guides, the speedrun community and the game files – and how to correct it.">
+  <meta property="og:image" content="https://everydaysimpledev.github.io/Crystal-Caravan-Codex/assets/img/icon/letter.png">
+  <meta property="og:url" content="https://everydaysimpledev.github.io/Crystal-Caravan-Codex/about.html">
+  <link rel="canonical" href="https://everydaysimpledev.github.io/Crystal-Caravan-Codex/about.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sources &amp; Contributing | Crystal Caravan Codex">
+  <meta name="twitter:description" content="Where the Crystal Caravan Codex data comes from – the FFCC World Ultimania, official guides, the speedrun community and the game files – and how to correct it.">
+  <meta name="twitter:image" content="https://everydaysimpledev.github.io/Crystal-Caravan-Codex/assets/img/icon/letter.png">
+  <!-- /SEO -->
+  <link rel="icon" href="assets/img/icon/crystal-0.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/codex.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main" tabindex="-1">
+    <div class="page-title">
+      <img src="assets/img/icon/letter.png" alt="">
+      <div>
+        <h1>Sources &amp; Contributing</h1>
+        <p>Where the numbers come from, and how to fix them.</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Sources</h2>
+      <ul>
+        <li><strong>FFCC World Ultimania</strong> (Square Enix, Japanese). Monster stats, boss data, dungeon-level scaling, the artifact chart and the tribe frame data. Where sources disagree, this one wins.</li>
+        <li><strong>Nintendo Power official guide</strong> (GameCube). Boss reward sets and bonus point thresholds.</li>
+        <li><strong>Piggyback official guide (French)</strong>. Damage formulas.</li>
+        <li><strong>GameFAQs FAQs and community spreadsheets</strong>. Items, recipes, chests, enemy drops and walkthrough notes.</li>
+        <li><strong>The FFCC speedrun community</strong>, including Linitaa's translations of the Ultimania tribe and artifact charts.</li>
+        <li><strong>Game data research</strong> from FFCC modding and randomizer projects.</li>
+      </ul>
+      <p class="muted">All Final Fantasy Crystal Chronicles names, images and sprites are © Square Enix. This is a non-commercial fan project.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Fixing or adding data</h2>
+      <p>Every page reads its numbers from the files in the <code>data/</code> folder, so you never need to touch the page code to correct a number:</p>
+      <ol>
+        <li>Open the matching file, e.g. <code>data/enemies.js</code> for a monster.</li>
+        <li>Edit the value. If you're unsure of something, use <code>null</code> rather than guessing.</li>
+        <li>Mention your source in the entry's <code>source</code> or <code>notes</code> field.</li>
+      </ol>
+      <p><code>data/README.md</code> explains every field.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script>Codex.initPage();</script>
+</body>
+</html>

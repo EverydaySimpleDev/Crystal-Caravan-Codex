@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://everydaysimpledev.github.io/Crystal-Caravan-Codex/sitemap.xml
